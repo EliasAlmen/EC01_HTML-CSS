@@ -1,0 +1,35 @@
+.browse-menu{
+    // height: 3.188rem;
+    // border-top: 0.063rem solid $color-gray-2;
+
+    .dropdown-theme{
+
+        button{
+            justify-content: space-between;
+            font-size: $font-size-18;
+            background-color: $color-theme;
+            color: $color-white;
+            width: 17rem;
+            text-decoration: none;
+            border: none;
+            height: 3.125rem;
+            border-radius: 0;
+
+            &:hover{
+                background-color: $color-theme-dark;
+            }
+        }
+
+        .dropdown-menu{
+            background-color: $color-theme-dark;
+
+            .dropdown-item{
+                color: $color-white;
+                
+                &:hover{
+                    color: $color-theme-dark;
+                }
+            }
+        }
+    }
+}
