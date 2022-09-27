@@ -34,4 +34,42 @@ ul {
 }
 .top-bar .dropdown-theme button:hover {
   color: #0E153D;
+}
+.top-bar .dropdown-theme .dropdown-menu {
+  background-color: #0E153D;
+  color: #FFFFFF;
+}
+.top-bar .dropdown-theme .dropdown-menu .dropdown-item:hover {
+  color: #0E153D;
+}
+
+.brand-search-acc {
+  height: 6.563rem;
+}
+.brand-search-acc .input-group {
+  width: 40%;
+}
+.brand-search-acc .input-group button {
+  background-color: #20D3C2;
+  color: #FFFFFF;
+  border: none;
+  width: 2.875rem;
+  font-size: 1.125rem;
+}
+.brand-search-acc .input-group button:hover {
+  background-color: #0E153D;
+}
+.brand-search-acc .input-group .form-control, .brand-search-acc .input-group .btn {
+  border-radius: 25px;
+  font-size: 0.875rem;
+  height: 2.875rem;
+}
+.brand-search-acc .account a {
+  color: #0E153D;
+}
+.brand-search-acc .account a:hover {
+  color: #20D3C2;
+}
+.brand-search-acc .account a .badge {
+  background-color: #20D3C2;
 }/*# sourceMappingURL=style.css.map */

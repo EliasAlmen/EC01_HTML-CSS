@@ -18,7 +18,18 @@
             padding: 0;
 
             &:hover{
-                color: $color-theme-dark
+                color: $color-theme-dark;
+            }
+        }
+
+        .dropdown-menu{
+            background-color: $color-theme-dark;
+            color: $color-white;
+
+            .dropdown-item{
+                &:hover{
+                    color: $color-theme-dark;
+                }
             }
         }
     }

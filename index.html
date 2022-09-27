@@ -13,9 +13,9 @@
 
     <!-- TOP BAR -->
     <header class="section-fluid top-bar d-flex align-items-center">
-        <nav class="container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between">
             <div class="language-currency">
-                <div class="btn-languages d-flex me-auto">
+                <div class="d-flex me-auto">
                     <nav class="dropdown dropdown-theme me-3">
                         <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span id="language-eng">ENG<i class="fa-solid fa-chevron-down ms-3"></i></span>
@@ -47,16 +47,78 @@
                 </nav>
                 <!-- Social icons -->
                 <nav class="d-none d-lg-block">
-                    <a href="#" class="top-bar-social"><i class="fa fa-facebook me-3" aria-hidden="true"></i></a>
-                    <a href="#" class="top-bar-social"><i class="fa fa-twitter me-3" aria-hidden="true"></i></a>
-                    <a href="#" class="top-bar-social"><i class="fa fa-instagram me-3" aria-hidden="true"></i></a>
-                    <a href="#" class="top-bar-social"><i class="fa fa-pinterest me-3" aria-hidden="true"></i></a>
-                    <a href="#" class="top-bar-social"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook me-3" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter me-3" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram me-3" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest me-3" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 </nav>
             </div>
-        </nav>
+        </div>
     </header>   
 
+    <!-- Account settings, search bar and brand logotype -->
+    <nav class="container">
+        <div class="brand-search-acc row align-items-center">
+            <!-- Brand logotype -->
+            <a href="index.html" class="col-3 d-none d-lg-block">
+                <img src="/images/brand-logo.svg" alt="Logotype">
+            </a>
+            <!-- Search bar -->
+            <form class="input-group col-md-auto">
+                <input type="text" class="form-control" placeholder="Search products..." aria-label="Search products..." aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-regular fa-magnifying-glass"></i></button>
+            </form>
+            <!-- Account settings -->
+            <nav class="account d-flex justify-content-end col">
+                <a href="account.html" class="me-5">
+                    <i class="fa-regular fa-user me-2"></i>
+                    My account
+                </a>
+                <a href="#" class="me-4">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="me-4 position-relative">
+                    <!-- Rounded pill "tooltip" -->
+                    <span class="position-absolute top-1 start-100 translate-middle badge rounded-pill">
+                        0
+                        <span class="visually-hidden">Shuffle</span>
+                    </span>
+                    <i class="fa-regular fa-shuffle"></i>
+                </a>
+                <a href="#" class="position-relative me-4">
+                    <!-- Rounded pill "tooltip" -->
+                    <span class="position-absolute top-1 start-100 translate-middle badge rounded-pill">
+                        0
+                        <span class="visually-hidden">Items</span>
+                    </span>
+                    <i class="fa-regular fa-cart-shopping"></i>
+                </a>
+                <a href="#">€9999.00</a>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Menu for "browse categories" and "Special offer" -->
+    <nav class="container browse-menu">
+        <div class="browse-categories">
+            <div class="dropdown">
+                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>
+                        <i class="fa-regular fa-bars me-3"></i> Browse Categories
+                    </span>
+                    <i class="fa-regular fa-chevron-down ms-3"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Computers</a></li>
+                    <li><a class="dropdown-item" href="#">TV & Displays</a></li>
+                </ul>
+            </div>               
+        </div>
+        <div class="special-offer d-none d-sm-flex">
+            <button class="btn special-text">SPECIAL OFFER</button>
+        </div>
+    </nav>
 
 
 <!-- BOOTSTRAP JAVASCRIPT -->

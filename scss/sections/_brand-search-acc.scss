@@ -1,0 +1,39 @@
+.brand-search-acc{
+    height: 6.563rem;
+
+    .input-group{
+        width: 40%;
+
+        button{
+            background-color: $color-theme;
+            color: $color-white;
+            border: none;
+            width: 2.875rem;
+            font-size: $font-size-18;
+
+            &:hover{
+                background-color: $color-theme-dark;
+            }
+        }
+
+        .form-control, .btn{
+            border-radius: $border-radius-medium;
+            font-size: $font-size-14;
+            height: 2.875rem;
+        }
+    }
+
+    .account{
+        a{
+            color: $color-theme-dark;
+
+            &:hover{
+                color: $color-theme;
+            }
+
+            .badge{
+                background-color: $color-theme;
+            }
+        }
+    }
+}
