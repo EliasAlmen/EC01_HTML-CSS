@@ -1,0 +1,25 @@
+.top-bar{
+    background-color: $color-theme;
+    height: 2.5rem;
+
+    a{
+        color: $color-white;
+
+        &:hover{
+            color: $color-theme-dark;
+        }
+    }
+
+    .dropdown-theme{
+        button{
+            background-color: $color-theme;
+            color: $color-white;
+            border: none;
+            padding: 0;
+
+            &:hover{
+                color: $color-theme-dark
+            }
+        }
+    }
+}

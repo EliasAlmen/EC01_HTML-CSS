@@ -1,0 +1,16 @@
+html, body{
+    font-family: $font-roboto;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
