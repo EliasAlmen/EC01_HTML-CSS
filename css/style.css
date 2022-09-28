@@ -37,10 +37,6 @@ ul {
 }
 .top-bar .dropdown-theme .dropdown-menu {
   background-color: #0E153D;
-  color: #FFFFFF;
-}
-.top-bar .dropdown-theme .dropdown-menu .dropdown-item:hover {
-  color: #0E153D;
 }
 
 .brand-search-acc {
@@ -74,6 +70,12 @@ ul {
   background-color: #20D3C2;
 }
 
+.browse-menu a {
+  color: #FFFFFF;
+}
+.browse-menu a:hover {
+  color: #0E153D;
+}
 .browse-menu .dropdown-theme button {
   justify-content: space-between;
   font-size: 1.125rem;
@@ -91,9 +93,199 @@ ul {
 .browse-menu .dropdown-theme .dropdown-menu {
   background-color: #0E153D;
 }
-.browse-menu .dropdown-theme .dropdown-menu .dropdown-item {
+.browse-menu .special-offer .btn {
+  background-color: #20D3C2;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 25px;
+  width: 100%;
+  border: none;
+}
+.browse-menu .special-offer .btn:hover {
+  background-color: #0E153D;
+}
+
+.showcase {
+  background-color: #EEEEEE;
+}
+.showcase .row .headings h1 {
+  color: #0E153D;
+  font-family: "Play", sans-serif;
+  font-size: 3.75rem;
+}
+.showcase .row .headings strong {
+  color: #20D3C2;
+  font-weight: 700;
+}
+.showcase .row .headings p {
+  color: #0E153D;
+}
+.showcase .row .headings .btn {
+  background-color: #FFFFFF;
+  color: #20D3C2;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 25px;
+  border: none;
+  width: 9.75rem;
+  height: 3.125rem;
+}
+.showcase .row .headings .btn:hover {
+  background-color: #0E153D;
   color: #FFFFFF;
 }
-.browse-menu .dropdown-theme .dropdown-menu .dropdown-item:hover {
+
+.commitments {
+  display: flex;
+  height: 22.938rem;
+  max-width: 105.063rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.commitments .commit {
+  background-color: #EDFCFA;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
   color: #0E153D;
+  transition: 250ms;
+}
+.commitments .commit .card-icon img {
+  transition: 250ms;
+}
+.commitments .commit .card-body {
+  padding-bottom: 0;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.commitments .commit .card-body h6 {
+  font-weight: 500;
+  color: #20D3C2;
+  transition: 250ms;
+}
+.commitments .commit:hover {
+  background-color: #20D3C2;
+  color: #FFFFFF;
+}
+.commitments .commit:hover .card-icon img {
+  filter: sepia(0%) brightness(1000%);
+}
+.commitments .commit:hover .card-body h6 {
+  color: #FFFFFF;
+}
+
+.shop-by-category, .we-always-try, .zigzag {
+  text-align: center;
+  color: #0E153D;
+}
+.shop-by-category h1, .we-always-try h1, .zigzag h1 {
+  font-family: "Play", sans-serif;
+  margin-bottom: -1rem;
+}
+.shop-by-category h1 span, .we-always-try h1 span, .zigzag h1 span {
+  color: #20D3C2;
+}
+
+.grid {
+  display: grid;
+  align-items: stretch;
+  align-content: stretch;
+  grid-template-columns: repeat(5, 19.5%);
+  grid-template-rows: repeat(3, 13.375rem);
+  gap: 0.625rem;
+}
+.grid .box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.grid .box .grid-product-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.grid .box .small-box {
+  height: 2.375rem;
+  width: 6.688rem;
+  background-color: #0E153D;
+  color: #20D3C2;
+  border-radius: 0 8px;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: 250ms;
+}
+.grid .box .small-box h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  padding: 0;
+}
+.grid .box .small-box p {
+  color: #FFFFFF;
+  margin: 0 0.5rem;
+  font-size: 0.875rem;
+  font-family: 400;
+}
+.grid .box:hover .small-box {
+  height: 4.688rem;
+  background-color: rgba(14, 21, 61, 0.8549019608);
+}
+
+#category-box-1 {
+  grid-column: 1/2;
+}
+
+#category-box-2 {
+  grid-column: 2/4;
+}
+
+#category-box-3 {
+  grid-column: 4/-1;
+  grid-row: 1/3;
+}
+
+#category-box-4 {
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+
+/* I assume this box (hats) auto-sizes due to all the other properties, that the standard size is 1row1column */
+/* #category-box-5 { 
+} */
+#category-box-6 {
+  grid-column: 3/5;
+}
+
+#category-box-7 {
+  grid-column: 5/-1;
+}
+
+/* Special "long" lenght for small-box :hover, women kids shoes sunglasses */
+#category-box-2 div {
+  width: 16.5rem;
+}
+
+#category-box-3 div {
+  width: 16.5rem;
+}
+
+#category-box-4 div {
+  width: 16.5rem;
+}
+
+#category-box-6 div {
+  width: 16.5rem;
 }/*# sourceMappingURL=style.css.map */

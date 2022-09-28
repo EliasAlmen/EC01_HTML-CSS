@@ -1,0 +1,55 @@
+.commitments{
+    display: flex;
+    height: 22.938rem;
+    max-width: 105.063rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+
+    .commit {
+        background-color: $color-theme-light;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        color: $color-theme-dark;
+        transition: 250ms;
+
+        .card-icon {
+            img{
+                transition: 250ms;
+            }
+        }
+
+        .card-body{
+            padding-bottom: 0;
+            margin-left: 1rem;
+            font-size: $font-size-16;
+
+            h6{
+                font-weight: $font-weight-medium;
+                color: $color-theme;
+                transition: 250ms;
+            }
+        }
+
+        &:hover{
+            background-color: $color-theme;
+            color: $color-white;
+
+            .card-icon {
+                img{
+                    filter: sepia(0%) brightness(1000%);
+                }
+            }
+
+            .card-body {
+                h6{
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}

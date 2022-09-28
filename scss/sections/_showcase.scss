@@ -1,0 +1,27 @@
+.showcase{
+    background-color: $color-gray-3;
+
+    .row{
+        .headings{
+
+            h1{
+                color: $color-theme-dark;
+                font-family: $font-play;
+                font-size: $font-size-60;
+            }
+
+            strong{
+                color: $color-theme;
+                font-weight: $font-weight-bold;
+            }
+
+            p{
+                color: $color-theme-dark;
+            }
+
+            .btn{
+                @include button($bg-color: $color-white, $color: $color-theme, $bg-hover: $color-theme-dark, $color-hover: $color-white);
+            }
+        }
+    }
+}

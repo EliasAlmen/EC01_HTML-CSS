@@ -1,0 +1,13 @@
+.shop-by-category, .we-always-try, .zigzag{
+    text-align: center;
+    color: $color-theme-dark;
+
+    h1{
+        font-family: $font-play;
+        margin-bottom: -1rem;
+
+        span{
+            color: $color-theme;
+        }
+    }
+}
