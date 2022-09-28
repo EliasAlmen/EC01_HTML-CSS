@@ -1,0 +1,115 @@
+.new-arrivals, .we-always-try, .zigzag{
+    text-align: center;
+    color: $color-theme-dark;
+
+    h1{
+        font-family: $font-play;
+        margin-bottom: -1rem;
+
+        span{
+            color: $color-theme;
+        }
+    }
+}
+
+.section-arrivals{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.new-arrivals-highlight{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    .highlight-box{
+        height: 25rem;
+        max-width: 21.875rem;
+        background-color: $color-gray-3;
+        border-radius: $border-radius-small;
+        overflow: hidden;
+        position: relative;
+
+        .highlight-box-small{
+            height: 51px;
+            width: 100%;
+            background-color: $color-theme-dark;
+            color: $color-theme;
+            padding: 0.25rem;
+            position: absolute;
+            bottom: 0;
+            transition: 250ms;
+
+            button{
+                background-color: #00000000;
+                color: $color-white;
+                border: 1px solid $color-white;
+                margin-left: 0.75rem;
+            }
+
+            h1, p{
+                margin: 0.75rem;
+            }
+
+            h1{
+                font-size: $font-size-24;
+                font-weight: $font-weight-medium;
+            }
+
+            h2{
+                font-size: $font-size-18;
+                font-weight: $font-weight-regular;
+                color: $color-white;
+                margin: 0.75rem;
+                transition: margin-top 250ms;
+            }
+
+            p{
+                color: $color-white;
+                text-decoration: line-through;
+            }
+        }
+
+        .highlight-box-menu{
+            position: absolute;
+            z-index: 1;
+            top: 101%;
+            right: 5%;
+            list-style: none;
+            margin: auto;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            border-radius: $border-radius-medium;
+            background-color: $color-white;
+            transition: top 250ms;
+
+            li{
+                display: flex;
+                justify-content: center;
+
+                a{
+                    color: $color-gray-0;
+
+                    &:hover{
+                        color: $color-theme;
+                    }
+                }
+            }
+        }
+
+        &:hover{
+            .highlight-box-small {
+                height: 100%;
+                background-color: $color-dark-opacity;
+
+                h2{
+                    margin-top: 70%;
+                }
+            }
+
+            .highlight-box-menu{
+                top: 4%;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.section-top-seller {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+
+        .top-seller, .we-always-try, .zigzag{
+            text-align: center;
+            color: $color-theme-dark;
+        }
+
+        .top-seller{
+            font-family: $font-play;
+            margin-bottom: -1rem;
+
+            h1{
+                span{
+                    color: $color-theme;
+                }
+            }
+        }
+
+        .top-seller-highlight{
+            display: flex;
+            justify-content: space-between;
+
+            .highlight-box{
+                width: 34.375rem;
+                height: 21rem;
+                background-color: $color-gray-3;
+                border-radius: $border-radius-small;
+                overflow: hidden;
+                position: relative;
+                
+                .highlight-box-small{
+                    height: 51px;
+                    width: 100%;
+                    background-color: $color-theme-dark;
+                    color: $color-theme;
+                    padding: 0.25rem;
+                    position: absolute;
+                    bottom: 0;
+                    transition: 250ms;
+
+                    h1{
+                        font-size: $font-size-24;
+                        font-weight: $font-weight-medium;
+                    }
+
+                    h2{
+                        font-size: $font-size-18;
+                        font-weight: $font-weight-regular;
+                        color: $color-white;
+                        margin: 0.75rem;
+                        transition: margin-top 250ms;
+                    }
+
+                    p{
+                        color: $color-white;
+                        text-decoration: line-through;
+                    }
+
+                    h1, p {
+                        margin: 0.75rem;
+                    }
+
+                    button{
+                        /* TRANSPARENCY button */
+                        background-color: #00000000; 
+                        color: $color-white;
+                        border: 1px solid $color-white;
+                        margin-left: 0.75rem;
+                    }
+                }
+
+                .highlight-box-menu{
+                    position: absolute;
+                    z-index: 1;
+                    top: 101%;
+                    right: 5%;
+                    list-style: none;
+                    margin: auto;
+                    padding: 0.5rem;
+                    font-size: 1.5rem;
+                    border-radius: $border-radius-medium;
+                    background-color: $color-white;
+                    transition: top 250ms;
+
+                    li{
+                        display: flex;
+                        justify-content: center;
+
+                        a{
+                            color: $color-gray-0;
+
+                            &:hover{
+                                color: $color-theme;
+                            }
+                        }
+                    }
+                }
+
+                &:hover{
+                    .highlight-box-small {
+                        height: 100%;
+                        background-color: $color-dark-opacity;
+                        
+                        h2{
+                            margin-top: 32%;
+                        }
+                        
+                    }
+
+                    .highlight-box-menu{
+                        top: 4%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#box-large{
+    height: 43.5rem;
+    width: 34.375rem;
+
+    &:hover{
+        .highlight-box-small h2{
+            margin-top: 97%;
+        }
+    }
+}

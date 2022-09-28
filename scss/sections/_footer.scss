@@ -1,0 +1,17 @@
+.section-footer{
+    background-color: $color-dark;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    .container{
+        p{
+            color: $color-white;
+            padding: 0;
+            margin: 0;
+            font-size: $font-size-16;
+        }
+    }
+    
+}

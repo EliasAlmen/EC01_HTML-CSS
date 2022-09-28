@@ -1,0 +1,76 @@
+.section-subscribe{
+    background-color: $color-gray-4;
+
+    .container{
+        height: 19.563rem;
+
+        .subscribe-body, .we-always-try {
+            color: $color-theme-dark;
+        }
+
+        .subscribe-body{
+            height: 100%;
+            width: 50%;
+
+            .input-group{
+                width: 70%;
+
+                .form-control{
+                    height: 142%;
+                    font-size: $font-size-14;
+                    font-weight: $font-weight-regular;
+                    position: relative;
+                }
+
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-theme;
+                    border-radius: $border-radius-medium;
+                    width: 6.688rem;
+                    height: 2.375rem;
+                    line-height: 0;
+                    border: none;
+                    position: absolute;
+                    left: 75.25%;
+                    top: 10%;
+                    z-index: 3;
+
+                    .btn-text{
+                        color: $color-white;
+                        font-size: $font-size-16;
+                        font-weight: $font-weight-regular;
+                        margin: 0;
+                        padding: 0;
+                        transition: color 250ms;
+                    }
+
+                    &:hover{
+                        background-color: $color-theme-dark;
+
+                        .btn-text{
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+
+            h1{
+                font-family: $font-play;
+
+                strong{
+                    span{
+                        color: $color-theme;
+                    }
+                }
+            }
+        }
+
+        .subscribe-fill{
+            height: 100%;
+            width: 50%;
+            background-color: $color-gray-1;
+        }
+    }
+}

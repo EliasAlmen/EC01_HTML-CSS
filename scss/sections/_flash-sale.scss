@@ -1,0 +1,86 @@
+.section-flash {
+    background-color: $color-theme-dark;
+
+    .container{
+        margin-bottom: 7rem;
+        .flash-body{
+            display: flex;
+            justify-content: space-between;
+            height: 26.125rem;
+
+            .bar-color{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 15.938rem;
+                height: 16rem;
+                background-color: $color-theme;
+                color: $color-white;
+
+                h1{
+                    font-family: $font-play;
+                    font-weight: $font-weight-bold;
+                    font-size: $font-size-60;
+                    margin-bottom: 0;
+                    text-align: center;
+                    line-height: 1;
+                }
+
+                p{
+                    font-size: $font-size-24;
+                    font-weight: $border-radius-medium;
+                }
+            }
+
+            .flash-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: $font-roboto;
+                font-size: $font-size-14;
+                color: $color-white;
+
+                .container-circle {
+                    display: flex;
+
+                    .flash-circle{
+                        height: 6.813rem;
+                        width: 6.813rem;
+                        background-color: $color-gray-3;
+                        color: $color-theme-dark;
+                        border-radius: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        outline: 2px dotted $color-theme;
+
+                        span{
+                            &:nth-child(1){
+                                font-family: $font-play;
+                                color: $color-theme;
+                                font-size: $font-size-36;
+                                font-weight: $font-weight-bold;
+                                line-height: 1;
+                            }
+
+                            &:nth-child(2){
+                                color: $color-theme-dark;
+                                font-size: $font-size-16;
+                            }
+                        }
+                        
+                    }
+                }
+
+                .btn{
+                    @include button($bg-color: $color-white, $color: $color-theme, $bg-hover: $color-theme, $color-hover: $color-white)
+
+                }
+            }
+        }
+    }
+}
