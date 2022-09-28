@@ -736,4 +736,124 @@ ul {
   padding: 0;
   margin: 0;
   font-size: 1rem;
+}
+
+.breadcrumbs {
+  background-color: #50546E;
+}
+.breadcrumbs .container {
+  height: 8.75rem;
+}
+.breadcrumbs .container h1 {
+  color: #20D3C2;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+.breadcrumbs .container .breadcrumb {
+  margin: 0;
+}
+.breadcrumbs .container .breadcrumb .breadcrumb-item {
+  color: #20D3C2;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.breadcrumbs .container .breadcrumb .breadcrumb-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.breadcrumbs .container .breadcrumb li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#login-email, #login-password, #login-submit, #register-submit, #fname, #lname, #register-email, #register-password {
+  width: 100%;
+}
+
+#login-email, #login-password, #fname, #lname, #register-email, #register-password {
+  border: none;
+  border-radius: 8px;
+  height: 2.625rem;
+}
+
+#login-submit, #register-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.25rem;
+  border-radius: 25px;
+  border: none;
+  background-color: #20D3C2;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: 250ms;
+}
+#login-submit:hover, #register-submit:hover {
+  background-color: #0E153D;
+  color: #FFFFFF;
+}
+
+#remember-me {
+  height: 25px;
+  width: 25px;
+}
+
+#remember-me:hover, #remember-lable:hover {
+  cursor: pointer;
+}
+
+.forms-section .row {
+  margin: 7.5rem 0;
+}
+.forms-section .form-general {
+  background-color: #F6F6F6;
+  border-radius: 8px;
+}
+.forms-section .form-general form div:not(:first-of-type) {
+  margin-top: 1.75rem;
+}
+.forms-section .form-general .asterix, .forms-section .form-general .terms-link {
+  color: #20D3C2;
+}
+.forms-section .form-general .form-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+  color: #0E153D;
+}
+.forms-section .form-general .text-muted, .forms-section .form-general .terms-link {
+  font-size: 0.875rem;
+}
+.forms-section .form-general .login-with {
+  font-weight: 500;
+  color: #0E153D;
+}
+.forms-section .form-general .login-social {
+  display: block;
+  text-align: center;
+}
+.forms-section .form-general .form-help a {
+  text-decoration: none;
+  color: #20D3C2;
+}
+.forms-section .form-general .form-help a:hover {
+  color: #0E153D;
+  text-decoration: underline;
+}
+.forms-section .form-general .terms-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0E153D;
+}
+.forms-section .form-login {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.forms-section .form-register {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=style.css.map */

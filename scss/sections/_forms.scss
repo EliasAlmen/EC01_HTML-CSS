@@ -1,0 +1,111 @@
+#login-email, #login-password, #login-submit, #register-submit, #fname, #lname, #register-email, #register-password{
+    width: 100%;
+}
+
+#login-email, #login-password, #fname, #lname, #register-email, #register-password{
+    border: none;
+    border-radius: $border-radius-small;
+    height: 2.625rem;
+}
+
+#login-submit, #register-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.25rem;
+    border-radius: $border-radius-medium;
+    border: none;
+    background-color: $color-theme;
+    color: $color-white;
+    font-size: $font-size-18;
+    font-weight: $font-weight-medium;
+    transition: 250ms;
+
+    &:hover{
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+}
+
+#remember-me{
+    height: 25px;
+    width: 25px;
+}
+
+#remember-me, #remember-lable{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.forms-section{
+    .row{
+        margin: 7.5rem 0; 
+    }
+
+    .form-general{
+        background-color: $color-gray-4;
+        border-radius: $border-radius-small;
+
+        form{
+            div{
+                &:not(:first-of-type){
+                    margin-top: 1.75rem;
+                }
+            }
+        }
+
+        .asterix, .terms-link {
+            color: $color-theme;
+        }
+
+        .form-title{
+            font-size: $font-size-24;
+            font-weight: $font-weight-medium;
+            margin-bottom: 1.75rem;
+            color: $color-theme-dark;
+        }
+
+        .text-muted, .terms-link{
+            font-size: $font-size-14;
+        }
+
+        .login-with{
+            font-weight: $font-weight-medium;
+            color: $color-theme-dark;
+        }
+
+        .login-social {
+            display: block;
+            text-align: center;
+        }
+
+        .form-help{ 
+            a{
+                text-decoration: none;
+                color: $color-theme;
+
+                &:hover{
+                    color: $color-theme-dark;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .terms-link{
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+                color: $color-theme-dark;
+            }
+        }
+    }
+
+    .form-login{
+        height: fit-content;
+    }
+
+    .form-register{
+        height: fit-content;
+    }
+}
