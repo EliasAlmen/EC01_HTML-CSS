@@ -1,7 +1,7 @@
 .browse-menu{
-    // height: 3.188rem;
-    // border-top: 0.063rem solid $color-gray-2;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     a{
         color: $color-white;
 
@@ -48,5 +48,12 @@
             }
         }
         
-    } 
+    }
+
+    
+    @include sm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

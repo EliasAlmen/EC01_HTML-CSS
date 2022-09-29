@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- TOP BAR -->
+    <!-- _top-bar.scss -->
     <header class="top-bar d-flex align-items-center">
         <div class="container d-flex justify-content-between">
             <div class="language-currency">
@@ -40,13 +40,13 @@
             <!-- Company info -->
             <div class="company-info d-flex justify-content-between">
                 <!-- Text links -->
-                <nav class="me-5 d-none d-sm-flex">
+                <nav class="me-5 d-none d-sm-flex"> <!-- for responsiveness -->
                     <a href="#" class="top-bar-links me-4">Newletter</a>
                     <a href="#" class="top-bar-links me-4">Contact us</a>
                     <a href="#" class="top-bar-links">FAQs</a>
                 </nav>
                 <!-- Social icons -->
-                <nav class="d-none d-lg-block">
+                <nav class="d-none d-lg-block">  <!-- for responsiveness -->
                     <a href="#"><i class="fa fa-facebook me-3" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter me-3" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-instagram me-3" aria-hidden="true"></i></a>
@@ -57,23 +57,23 @@
         </div>
     </header>   
 
-    <!-- Account settings, search bar and brand logotype -->
+    <!-- _brand-search-acc.scss -->
     <nav class="container">
         <div class="brand-search-acc row align-items-center">
             <!-- Brand logotype -->
-            <a href="index.html" class="col-3 d-none d-lg-block">
-                <img src="/images/brand-logo.svg" alt="Logotype">
+            <a href="index.html" class="col-3 d-none d-md-block">
+                <img class="img-fluid" src="/images/brand-logo.svg" alt="Logotype"> 
             </a>
             <!-- Search bar -->
             <form class="input-group col-md-auto">
                 <input type="text" class="form-control" placeholder="Search products..." aria-label="Search products..." aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-regular fa-magnifying-glass"></i></button>
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="d-none">Placeholder text</span><i class="fa-regular fa-magnifying-glass"></i></button>
             </form>
             <!-- Account settings -->
-            <nav class="account d-flex justify-content-end col">
+            <nav class="account col">
                 <a href="account.html" class="me-5">
                     <i class="fa-regular fa-user me-2"></i>
-                    My account
+                    <span class="d-none d-xl-inline">My account</span>
                 </a>
                 <a href="#" class="me-4">
                     <i class="fa-regular fa-heart"></i>
@@ -99,9 +99,9 @@
         </div>
     </nav>
 
-    <!-- Menu for "browse categories" and "Special offer" -->
+    <!-- _browse-menu.scss -->
     <nav class="border-top">
-        <nav class="container browse-menu d-flex justify-content-between align-items-center">
+        <nav class="container browse-menu">
             <div class="dropdown dropdown-theme">
                 <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>
@@ -158,12 +158,12 @@
                                 <input type="password" id="login-password" required>
                             </div>
                             <input class="my-4" type="submit" value="LOG IN" id="login-submit">
-                            <div class="form-help d-flex justify-content-between">
+                            <div class="form-help d-flex justify-content-between align-items-center">
                                 <div class="d-flex">
                                     <input type="checkbox" id="remember-me">
                                     <label class="ms-2" for="remember-me" id="remember-lable">Remember me</label>
                                 </div>
-                                <div><a href="#" class="flex-fill lost-password">Lost your password?</a></div>
+                                <a href="#" class="lost-password">Lost your password?</a>
                             </div>
                         </form>
                         <div class="login-with d-flex justify-content-evenly mt-4">

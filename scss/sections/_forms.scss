@@ -78,12 +78,23 @@
         .login-social {
             display: block;
             text-align: center;
+
+            a{
+                @include xl {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0.25rem;
+                }
+                
+            }
         }
 
-        .form-help{ 
+        .form-help{
             a{
                 text-decoration: none;
                 color: $color-theme;
+                margin: 0;
+                padding: 0;
 
                 &:hover{
                     color: $color-theme-dark;

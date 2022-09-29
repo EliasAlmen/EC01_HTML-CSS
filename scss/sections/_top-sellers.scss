@@ -23,10 +23,10 @@
 
         .top-seller-highlight{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
 
             .highlight-box{
-                width: 34.375rem;
+                width: 100%;
                 height: 21rem;
                 background-color: $color-gray-3;
                 border-radius: $border-radius-small;
@@ -116,6 +116,10 @@
                         top: 4%;
                     }
                 }
+            }
+
+            @include xl {
+                justify-content: center;
             }
         }
     }

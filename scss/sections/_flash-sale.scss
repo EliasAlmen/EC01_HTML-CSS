@@ -81,6 +81,16 @@
 
                 }
             }
+            // Note to self, try not the mess with flex direction.
+            // Both of the @include took a while to figure out.
+            @include lg {
+                display: block;
+            }
+        }
+
+        @include lg {
+            display: flex;
+            justify-content: center;
         }
     }
 }

@@ -33,6 +33,10 @@
                 color: $color-theme;
                 transition: 250ms;
             }
+
+            @include md{
+                margin: 0;
+            }
         }
 
         &:hover{

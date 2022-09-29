@@ -21,11 +21,19 @@
             font-size: $font-size-14;
             height: 2.875rem;
         }
+
+        @include sm {
+            width: 80%;
+        }
     }
 
     .account{
+        display: flex;
+        justify-content: end;
+
         a{
             color: $color-theme-dark;
+            transition: 250ms;
 
             &:hover{
                 color: $color-theme;
@@ -35,5 +43,15 @@
                 background-color: $color-theme;
             }
         }
+
+        @include lg{
+            justify-content: center;
+        }
+    }
+
+    @include lg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

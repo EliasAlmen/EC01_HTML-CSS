@@ -20,6 +20,13 @@
                     font-size: $font-size-14;
                     font-weight: $font-weight-regular;
                     position: relative;
+
+                    // responsiveness
+                    @include lg {
+                        height: 2.375rem;
+                        width: 100%;
+                        position: static;
+                    }
                 }
 
                 .btn{
@@ -33,7 +40,6 @@
                     line-height: 0;
                     border: none;
                     position: absolute;
-                    left: 75.25%;
                     top: 10%;
                     z-index: 3;
 
@@ -53,6 +59,29 @@
                             color: $color-white;
                         }
                     }
+                    // responsiveness
+                    @include lg {
+                        position: static;
+                        margin-top: 0.5rem;     
+                    }
+
+                    @include xl-min {
+                        left: 71.25%;
+                    }
+
+                    @include xl {
+                        left: 65%;
+                    }
+
+                    @include xxl-min {
+                        left: 75.25%;
+                    }
+                }
+                // responsiveness
+                @include lg {
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
 

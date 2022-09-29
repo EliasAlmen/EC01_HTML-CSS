@@ -1,6 +1,10 @@
+// Core
 @import "./core/variables";
+@import "./core/breakpoints";
 @import "./core/mixin";
 @import "./core/general";
+
+// Sections, order by same as page structure
 @import "./sections/top-bar";
 @import "./sections/brand-search-acc";
 @import "./sections/browse-menu";
@@ -17,4 +21,3 @@
 @import "./sections/footer";
 @import "./sections/breadcrumbs";
 @import "./sections/forms";
-@import "./components/buttons";

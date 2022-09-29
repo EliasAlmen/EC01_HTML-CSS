@@ -112,4 +112,9 @@
             }
         }
     }
+
+    @include md {
+        display: flex;
+        justify-content: center;
+    }
 }

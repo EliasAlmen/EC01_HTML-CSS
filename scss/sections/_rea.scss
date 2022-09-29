@@ -6,47 +6,53 @@
         justify-content: space-between;
         height: 26.125rem;
         gap: 0.5rem;
-    }
 
-    .bar-color{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 15.938rem;
-        background-color: $color-theme;
-        color: $color-white;
-        padding: 0.5rem;
-
-        h1{
-            font-family: $font-play;
-            font-weight: $font-weight-bold;
-            font-size: $font-size-60;
-            margin-bottom: 0;
-
-            span{
-                font-size: $font-size-36;
+        .bar-color{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 15.938rem;
+            background-color: $color-theme;
+            color: $color-white;
+            padding: 0.5rem;
+    
+            h1{
+                font-family: $font-play;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-60;
+                margin-bottom: 0;
+    
+                span{
+                    font-size: $font-size-36;
+                }
+            }
+    
+            .btn{
+                @include button($bg-color: $color-theme-dark, $color: $color-white, $bg-hover: $color-white, $color-hover: $color-theme-dark)
             }
         }
 
-        .btn{
-            @include button($bg-color: $color-theme-dark, $color: $color-white, $bg-hover: $color-white, $color-hover: $color-theme-dark)
+        .rea-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 40%;
+            font-family: $font-roboto;
+            font-size: $font-size-14;
+            color: $color-white;
+    
+            .btn{
+                @include button($bg-color: $color-white, $color: $color-theme, $bg-hover: $color-theme-dark, $color-hover: $color-white)
+            }
+        }
+        // To center at small screen
+        @include sm{
+            display: flex;
+            justify-content: center;
         }
     }
 
-    .rea-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 27.813rem;
-        font-family: $font-roboto;
-        font-size: $font-size-14;
-        color: $color-white;
-
-        .btn{
-            @include button($bg-color: $color-white, $color: $color-theme, $bg-hover: $color-theme-dark, $color-hover: $color-white)
-        }
-    }
     
 }

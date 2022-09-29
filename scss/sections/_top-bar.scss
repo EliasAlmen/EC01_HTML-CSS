@@ -4,6 +4,7 @@
 
     a{
         color: $color-white;
+        transition: 250ms;
 
         &:hover{
             color: $color-theme-dark;
@@ -16,6 +17,7 @@
             color: $color-white;
             border: none;
             padding: 0;
+            transition: 250ms;
 
             &:hover{
                 color: $color-theme-dark;
